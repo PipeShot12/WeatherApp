@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+.today {
+  background-color: rgba(56, 39, 55, 0.8);
+}
+.arrow {
+  color: rgb(216, 197, 75);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 197, 75);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b11b61;
+}
+#temps {
+  height: 20px;
+  width: 150px;
+  border-radius: 1em;
+  background: linear-gradient(
+    90deg,
+    rgba(104, 13, 165, 0.8) 0%,
+    rgba(153, 23, 83, 1) 40%,
+    rgb(255, 97, 82),
+    rgb(201, 181, 55)
+  );
+}
+@media (max-width: 800px) {
+  #temps {
+    width: 100px;
+  }
+}

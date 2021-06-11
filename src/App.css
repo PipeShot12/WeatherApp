@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+
+body,
+html {
+  background-image: linear-gradient(
+      45deg,
+      rgba(163, 60, 78, 0.8) 0%,
+      rgba(101, 55, 118, 0.8) 100%
+    ),
+    url("./img/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-y: hidden;
+  font-family: "Oswald", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+  #app {
+    margin: 15px;
+  }
+}
+#app {
+  box-shadow: 0px 5px 40px 15px rgba(20, 20, 0, 0.5);
+}

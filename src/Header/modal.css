@@ -1,0 +1,42 @@
+.boton-modal {
+  background-color: #721136;
+  padding: 8px;
+  width: 15%;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+.boton-modal:hover {
+  background-color: #470921;
+}
+.modal-content {
+  border-radius: 0px;
+  background-color: rgba(56, 39, 55, 1);
+}
+.modal-footer {
+  border-top: 2px solid rgba(114, 17, 54, 1);
+}
+.modal-header {
+  border-bottom: 2px solid rgba(114, 17, 54, 1);
+  position: relative;
+}
+
+.close > span {
+  visibility: hidden;
+  color: yellow;
+  position: absolute;
+  top: 0px;
+}
+.close:after {
+  content: "";
+  visibility: visible;
+  background-image: url("../img/cancel.png");
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  left: 475px;
+}

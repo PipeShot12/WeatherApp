@@ -20,7 +20,7 @@ html {
   font-family: "Oswald", sans-serif, Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html,
   body {
     overflow-y: auto;

@@ -20,7 +20,7 @@ export default function Header ({ getData }) {
       setMainCountyPhoto(countyImageRes)
 
       const resDetails = await searchPlaceDetails(resWeather)
-      getData(resDetails, '', mainCountyPhoto)
+      getData(resDetails, '', countyImageRes)
     })()
     const arr = suggestedPlacesNav()
     setSuggestedCountries(arr)
@@ -36,7 +36,6 @@ export default function Header ({ getData }) {
 
       countries.push(country)
     }
-    console.log(randomConuntries())
     randomConuntries().map(getSuggested)
     return countries
   }
